@@ -1,0 +1,135 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    display: flex;
+    flex-direction: column; /* Stack header and content vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px; /* Add padding to ensure elements are not sticking to the edges */
+    color: white;
+}
+
+/* Header */
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px; /* Space between header and the container */
+}
+
+header h1 {
+    font-size: 4em; /* Increase the size of the header */
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+header p {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+/* Centered Container */
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Create consistent space between the elements */
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 15px;
+    font-size: 28px; /* Slightly larger font size for better prominence */
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 14px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    transition: 0.3s ease;
+}
+
+/* Focus effect on input fields */
+input:focus {
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid #ff7eb3;
+}
+
+/* Placeholder Styling */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #ff7eb3;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #ff4f8b;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 80%; /* Reduce the container width for smaller screens */
+    }
+
+    header h1 {
+        font-size: 3em; /* Smaller header size for mobile */
+    }
+
+    header p {
+        font-size: 1.2em; /* Smaller subtitle font for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Make the container width even smaller for very small screens */
+    }
+
+    header h1 {
+        font-size: 2.5em; /* Further reduce header size */
+    }
+
+    header p {
+        font-size: 1em; /* Reduce subtitle font */
+    }
+}

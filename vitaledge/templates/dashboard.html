@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome, {{ username }}!</h2>
+        <button onclick="logout()">Logout</button>
+
+        <h3>Enter Your Health Issue</h3>
+        <input type="text" id="problem" placeholder="e.g., chest pain">
+        <button onclick="checkFirstAid()">Check First Aid</button>
+
+        <p id="result"></p>
+    </div>
+</body>
+</html>
