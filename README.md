@@ -29,7 +29,7 @@ To set up and use the VITAL EDGE application on your local machine, follow these
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/prajwal816/VitalEdge.git
-2. ****Navigate to the project directory:**
+2. **Navigate to the project directory:**
 
    ```bash
    cd VitalEdge
