@@ -22,10 +22,22 @@ The purpose of VITAL EDGE is to offer a straightforward platform for users to ob
 - **Basic Medical Guidance**: Provides general information and guidance based on the selected questions.
 
 ## Installation and Usage
--To set up and use the VITAL EDGE application on your local machine, follow these steps: Clone the repository using `git clone https://github.com/prajwal816/VitalEdge.git`. 
--Navigate to the project directory with `cd VitalEdge`. Install any necessary dependencies (if applicable) using `npm install`. Launch the application with `npm start`.
--Open your web browser and go to `http://localhost:3000` (or the appropriate URL). 
--Enter a question from the list to receive an answer.
+## Installation
+
+To set up and use the VITAL EDGE application on your local machine, follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/prajwal816/VitalEdge.git
+2. ****Navigate to the project directory:**
+
+   ```bash
+   cd VitalEdge
+3. **Launch the application**:
+   ```bash
+   python app.py
+  
+
 
 ## Contributing
 Contributions are welcome! If you would like to contribute to the VITAL EDGE project, please follow these steps: Fork the repository, create a new branch (`git checkout -b feature/YourFeature`), make your changes and commit them (`git commit -m 'Add some feature'`), push to the branch (`git push origin feature/YourFeature`), and open a pull request.
