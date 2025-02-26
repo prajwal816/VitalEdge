@@ -10,7 +10,7 @@ def get_db_connection():
     conn.row_factory = sqlite3.Row
     return conn
 
-# Initialize database
+# Initialize database with an extended dataset
 def init_db():
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -29,13 +29,30 @@ def init_db():
         recommended_action TEXT
     )""")
 
-    # Sample medical problems
+    # Extended dataset for first-aid recommendations
     sample_data = [
         ("Headache", "Take paracetamol and drink water."),
         ("Fever", "Stay hydrated and take ibuprofen."),
         ("Chest Pain", "Seek immediate medical attention."),
         ("Sprain", "Apply ice and rest the limb."),
         ("Cough", "Drink warm fluids and use cough syrup."),
+        ("Heart Attack", "Call emergency services immediately. Chew aspirin if not allergic."),
+        ("CPR", "Perform 30 chest compressions followed by 2 rescue breaths."),
+        ("Severe Burn", "Cool burn under running water for 20 minutes, cover with sterile dressing."),
+        ("Dehydration", "Drink fluids, especially water and electrolyte solutions."),
+        ("Nosebleed", "Pinch the nostrils and lean forward for 10 minutes."),
+        ("Stroke", "Use the FAST test: Face drooping, Arm weakness, Speech difficulty, Time to call emergency services."),
+        ("Choking", "Perform the Heimlich maneuver by applying abdominal thrusts."),
+        ("Food Poisoning", "Stay hydrated, rest, and eat bland foods like toast or rice."),
+        ("High Blood Pressure", "Reduce salt intake, exercise, and take prescribed medications."),
+        ("Hypothermia", "Move to a warm place, remove wet clothing, and warm gradually."),
+        ("Asthma Attack", "Use a quick-relief inhaler, sit upright, and take slow breaths."),
+        ("Snake Bite", "Keep the affected limb immobilized, avoid sucking venom, and seek emergency medical help."),
+        ("Broken Bone", "Keep the limb immobilized, apply a splint, and seek immediate medical attention."),
+        ("Heat Stroke", "Move to a cool area, hydrate, and seek medical help."),
+        ("Jellyfish Sting", "Rinse with vinegar, remove tentacles with tweezers, and soak in hot water."),
+        ("Allergic Reaction", "Use an antihistamine. If severe, administer epinephrine and call for help."),
+        ("Concussion", "Rest, avoid bright lights, and monitor symptoms for confusion or vomiting.")
     ]
 
     for problem, action in sample_data:
@@ -44,7 +61,8 @@ def init_db():
     conn.commit()
     conn.close()
 
-init_db()  # Run database initialization
+# Run database initialization
+init_db()
 
 # Homepage (Login / Register)
 @app.route("/")
