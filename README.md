@@ -9,7 +9,6 @@ VITAL EDGE is a simple medical application designed for our lab assessment at th
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 - [Acknowledgements](#acknowledgements)
 
 ## Introduction
