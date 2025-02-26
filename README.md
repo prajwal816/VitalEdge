@@ -35,8 +35,6 @@ To set up and use the VITAL EDGE application on your local machine, follow these
 3. **Launch the application**:
    ```bash
    python app.py
-  
-
 
 ## Contributing
 Contributions are welcome! If you would like to contribute to the VITAL EDGE project, please follow these steps: Fork the repository, create a new branch (`git checkout -b feature/YourFeature`), make your changes and commit them (`git commit -m 'Add some feature'`), push to the branch (`git push origin feature/YourFeature`), and open a pull request.
